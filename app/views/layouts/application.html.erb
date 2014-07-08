@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cocktails</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='header'>
+		<div class='logo'>
+
+		</div>
+	<!-- navbar start -->
+		<div class='nav-bar'>
+
+				<a href="/about" class="home-nav">
+					Home
+				</a>
+
+
+			<a href="/products" class="products-nav">
+			
+				Products
+			</a>
+
+			<div class="about-nav">
+				About us
+			</div>
+
+			<a href="/pictures" class="gallery-nav">
+				Gallery
+			</a>
+		</div>
+		<!-- navbar end -->
+
+		<button class="sign-up-button">
+			Sign-up
+		</button>
+
+	</div>
+
+<nav></nav>
+
+<%= yield %>
+
+</body>
+</html>

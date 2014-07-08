@@ -1,0 +1,89 @@
+<div class="inside">
+
+		<div class='title'>
+		 Build your cocktails
+		 <p> cocktails deliver to your door, let us help you get drunk </p>
+		 <p> choose your box and we'll do the rest</p>
+		</div>
+		<a href='/products' class="create-cocktails"> Browse our bar</a>
+
+
+		<div class='picture'>
+			<h1>picture</h1>
+		</div>
+
+
+		<div class="basic-info">
+			<div class='info-header'>
+				<div class="info-header1 selected" id="info1">	
+					What is cocktails?
+				</div>
+				<div class="info-header2" id="info2">
+					How does it work?
+				</div>
+				<div class="info-header3" id="info3">
+					what is the cost?
+				</div>
+			</div>
+			<div class="basic-info-content">
+				<div class="info-content" id='content1'>
+					<p>cocktails allow you to order yourself all the ingrediants needed to make your own at home with your family and friends</p>
+					<p>all you need to do is order your box and we will send you everything you need to have a awesome night with your friends</p>
+				</div>
+				<div class="info-content" id='content2'>
+					<p>add a new text for checking fade in and out </p>
+					<p>cocktails allow you to order yourself all the ingrediants needed to make your own at home with your family and friends</p>
+					<p>all you need to do is order your box and we will send you everything you need to have a awesome night with your friends</p>
+				</div>
+				<div class="info-content" id='content3'>
+					<p>all you need to do is order your box and we will send you everything you need to have a awesome night with your friends</p>
+					<p>cocktails allow you to order yourself all the ingrediants needed to make your own at home with your family and friends</p>
+					<p>add a new text for checking fade in and out </p>
+					<p>all you need to do is order your box and we will send you everything you need to have a awesome night with your friends</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="bottom-boxes">
+			<div class="left-box">
+			</div>
+			<div class="centre-box">
+			</div>
+			<div class="right-box">
+			</div>
+		</div>
+
+		<div class="footer">
+		</div>
+</div>
+
+
+
+<script>
+	$("#info1").on('click', function() {
+   $("#content2").fadeOut();
+   $("#content3").fadeOut();
+   $("#content1").fadeIn();
+   $(this).addClass('selected').siblings().removeClass('selected');
+   $(this).parent().tooltip('destroy')
+});
+
+$("#info2").on('click', function() {
+   $("#content1").fadeOut();
+   $("#content3").fadeOut();
+   $("#content2").fadeIn();
+   $(this).addClass('selected').siblings().removeClass('selected');
+   $(this).parent().tooltip('destroy')
+});
+
+$("#info3").on('click', function() {
+   $("#content1").fadeOut();
+   $("#content2").fadeOut();
+   $("#content3").fadeIn();
+   $(this).addClass('selected').siblings().removeClass('selected');
+   $(this).parent().tooltip('destroy')
+});
+
+
+</script>
