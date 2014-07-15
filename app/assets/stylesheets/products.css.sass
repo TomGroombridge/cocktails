@@ -1,50 +1,32 @@
 .product-title
-	width: 30%
-	height: 100px
+	width: 100%
+	height: 130px
 	position: absolute
-	top: 300px
-	left: 193px
+	top: 148px
+	left: 0
+	border: 1px solid black
 	font-size: 30px
 	font-family: georgia
 	line-height: 3
+	font-size: 45px
+	padding-left: 75px
 
 
 .prodcut-catergory
-	width: 80%
+	width: 72%
 	height: 100%
-	left: 173px
+	left: 336px
 	position: absolute
-	top: 400px
+	top: 340px
 	.product
-		width: 20%
-		height: 300px
+		width: 29%
+		height: 400px
 		position: relative
 		top: 5%
 		margin-left: 30px
-		border: 1px solid black
 		display: inline-flex
-		&:hover
-			.view-image
-				display: block
-				width: 50% 
-				position: absolute
-				left: 0
-				right: 0
-				margin: auto
-				top: 0
-				bottom: 0
-				height: 13%
-				border-radius: 4px
-				background-color: black
-				border: none
-				color: white
-				font-size: 14px
-				line-height: 2
-				padding: 8px
-				text-align: center
+		margin-top: 5%
 
-		.view-image
-			display: none
 		.product-header
 			width: 100%
 			height: 20%
@@ -56,15 +38,61 @@
 			font-size: 2vw
 			line-height: 2
 			font-family: Merriweather
-		.product-image
+			display: none
+		.picture-image
 			width: 80%
-			height: 70%
+			height: 80%
 			border: 1px solid blue
 			position: absolute
-			top: 25%
+			top: 0
+			bottom: 0
 			left: 0
 			right: 0
 			margin: auto
+
+		.product-name
+			width: 100%
+			bottom: 0
+			position: absolute
+			height: 50%
+			line-height: 33px
+
+		.product-image
+			height: 80%
+			position: absolute
+			left: 0
+			right: 0
+			margin: auto
+			width: 100%
+			&:hover
+				cursor: pointer
+			img
+				width: 100%
+				height: 100%
+		.footer-info		
+			height: 20%
+			bottom: 0
+			position: absolute
+			width: 100%
+			.top-footer-info
+				width: 100%
+				height: 50%
+				background-color: white
+				.add-to-cart
+					width: 50%
+					left: 0
+					height: 100%%
+					color: #544840
+					line-height: 37px
+				.quick-view				
+					width: 44%
+					right: 0
+					position: absolute
+					height: 100%
+					top: 0
+					line-height: 37px
+					text-align: right
+					padding-right: 5%
 
 .cocktail-image-border
 	width: 20%
@@ -117,7 +145,7 @@
 	left: 38%
 	top: 218px
 	.cocktail-title
-		width: 40%
+		width: 100%
 		height: 70px
 		position: absolute
 		font-family: georgia
@@ -178,6 +206,49 @@
 		width: 100%
 		height: 30px
 		border-bottom: 1px solid black
+
+.new-product
+	position: absolute
+	width: 50%
+	top: 50%
+	left: 0
+	right: 0
+	margin: auto
+
+
+.cocktail-menu
+	top: 279px
+	width: 23%
+	height: 605px
+	border: 1px solid black
+	position: absolute
+	left: 40px
+	.list-title
+		padding-left: 13%
+		top: 38px
+		height: 50px
+		position: absolute
+		width: 87%
+		line-height: 50px
+	.list
+		margin-top: 100px
+		.cocktail-menu-item
+			height: 40px
+			border-bottom: 1px solid black
+			font-size: 20px
+			line-height: 37px
+			list-style-type: none
+			cursor: pointer
+
+.product-header
+	width: 69%
+	top: 300px
+	position: absolute
+	border-bottom: 1px solid black
+	right: 34px
+	height: 62px
+
+
 
 
 

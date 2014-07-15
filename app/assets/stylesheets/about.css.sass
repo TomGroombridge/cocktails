@@ -5,17 +5,27 @@
 
 html
 	height: 100%
+	width: 100%
 body
-	background-color: #d4d6d7
-	min-height: 100%
+	
+	/*background-image: image-url("Elegant_Background-7.jpg")*/
+	background-position: center 0 , center center
+	background-color: #f7f4ef
+	height: 100%
 	margin: 0
+	width: 100%
 	.header
 		height: 200px
 		margin-right: 122px
+		position: absolute
+		z-index: 1
+		right: 0
+		width: 92%
 		.logo
+			display: none
+			background-color: white
 			height: 250px
 			width: 16%
-			border: 1px solid black
 			border-top: none
 			position: absolute
 			margin-left: 15%
@@ -106,17 +116,19 @@ body
 
 
 .inside
-	width: 90%
-	position: relative
-	height: 100%
+	width: 100%
+	position: absolute
+	height: 670px
 	.title
 		width: 45%
 		height: 40%
 		position: relative
 		font-size: 50px
 		font-family: georgia
-		left: 62%
-		top: 50px
+		left: 10%
+		z-index: 1
+		top: 225px
+		color: #ae8e1b
 		p
 			font-size: 15px
 
@@ -131,9 +143,10 @@ body
 		width: 200px
 		height: 47px
 		position: absolute
-		right: 0
+		left: 128px
+		z-index: 1
 		color: white
-		top: 200px
+		top: 400px
 		font-size: 15px
 		font-family: georgia
 		font-size: 20px
@@ -145,12 +158,13 @@ body
 			color: #ae8e1b
 
 	.picture
-		width: 40%
-		height: 300px
+		background-color: white
+		repeat: none
+		width: 100%
+		height: 100%
 		border: 1px solid black
 		position: absolute
-		left: 173px
-		top: 200px
+		top: 0
 		h1
 			text-align: center
 			line-height: 5
@@ -162,17 +176,18 @@ body
 		height: 300px
 		border-top: none
 		position: absolute
-		top: 630px
-		left: 170px
+		top: 780px
+		left: 129px
 		.info-header
 			height: 50px
 			margin-right: none
 		.info-header1
 			cursor: pointer
-			width: 30%
+			width: 28%
+			margin-right: 4%
 			height: 50px
 			display: inline-block
-			margin-right: 10px
+			margin-right: 20px
 			line-height: 2
 			text-align: left
 			font-size: 19px
@@ -180,12 +195,14 @@ body
 			border-left: none
 			border-bottom: none
 			background-color: #dddedf
+			border: 1px solid black
 		.info-header2
+			border: 1px solid black
 			cursor: pointer
-			width: 30%
+			width: 28%
+			margin-right: 20px
 			height: 50px
 			display: inline-block
-			margin-right: 10px
 			line-height: 2
 			text-align: left
 			font-size: 19px
@@ -193,17 +210,17 @@ body
 			border-bottom: none
 			background-color: #dddedf
 		.info-header3
+			border: 1px solid black
 			cursor: pointer
-			width: 33%
+			width: 35.3%
 			height: 50px
 			display: inline-block
 			line-height: 2
 			text-align: left
 			font-size: 19px 
-			padding-left: 10px
+			/*padding-left: 10px*/
 			border-bottom: none
 			border-right: none
-			padding-right: 6.5px
 			background-color: #dddedfub
 		.basic-info-content
 			background-color: #ebebec
@@ -221,26 +238,29 @@ body
 		width: 90%
 		height: 335px
 		position: absolute
-		top: 1045px
-		left: 170px
+		top: 1177px
+		left: 172px
 		.left-box
 			width: 290px
 			height: 300px
 			border: 1px  solid black
 			display: inline-flex
 			margin-right: 19px
+			background-color: white
 		.centre-box
 			width: 290px
 			height: 300px
 			border: 1px solid black
 			display: inline-flex
 			margin-right: 19px
+			background-color: white
 		.right-box
 			width: 290px
 			height: 300px
 			border: 1px solid black
 			display: inline-flex
 			margin-right: 19px
+			background-color: white
 
 	.footer
 		bottom: 0px
@@ -249,13 +269,14 @@ body
 		height: 50px
 		border: 1px solid black
 		position: absolute
-		left: 170px
-		top: 1440px
+		left: 117px
+		top: 1590px
 		margin-bottom: 55px
+		background-color: white
 
 
 .selected
-	background-color: #ebebec
+	background-color: #ebebec !important
 	border-bottom: 0
 	color: #383636
 	font-weight: 500

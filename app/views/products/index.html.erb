@@ -1,44 +1,49 @@
 <div class='product-title'>
 	COCKTAIL BAR
 </div>
-
+<div class='cocktail-menu'>
+	<div class='list-title'>	
+		COCKTAILS
+	</div>
+		<ul class='list'>
+		<% @products.each do |product| %>
+			<li class='cocktail-menu-item'><%= product.name %></li>
+		<% end %>
+		</ul>
+</div>
+<div class='product-header'>
+	Showing all <%= @products.count %> products
+</div>
 <div class='prodcut-catergory'>
+<% @products.each do |product| %>
 	<div class='product'>
-		<div class='product-header'>
-			Mojito
-		</div>
 		<div class='product-image'>
-			<a href='/products/1' class='view-image' id='product1'> view cocktail</a>
+				<%= image_tag product.image.url, class: 'image-upload'%>
+		</div>
+		<div class='footer-info'>
+			<div class='top-footer-info'>
+				<div class='add-to-cart' id='cart' onClick="popUp();">
+					ADD TO CART
+				</div>
+				<div class='quick-view'>	
+					QUICKVIEW
+				</div>
+			</div>
+			<div class='product-name'>
+				<%= product.name %>
+				<%= product.price %>
+			</div>
 		</div>
 	</div>
-	<div class='product'>
-		<div class='product-header'>
-			Alexander
-		</div>
-		<div class='product-image'>
-			<a href='/products/2' class='view-image' id='product1'> view cocktail</a>
-		</div>
-	</div>
-	<div class='product'>
-		<div class='product-header'>
-			Margarita
-		</div>
-		<div class='product-image'>
-			<a href='/products/3' class='view-image' id='product1'> view cocktail</a>
-		</div>
-	</div>
-	<div class='product'>
-		<div class='product-header'>
-			Pineapple Punch
-		</div>
-		<div class='product-image'>
-			<a href='/products/4' class='view-image' id='product1'> view cocktail</a>
-		</div>
-	</div>
+<% end %>
 </div>
 
 
 
+
+
+
+				
 
 
 
