@@ -18,7 +18,7 @@
 <% @products.each do |product| %>
 	<div class='product'>
 		<div class='product-image'>
-				<%= image_tag product.image.url, class: 'image-upload'%>
+				<%= link_to image_tag(product.image.url, class: 'image-upload'), product_path(product)%>
 		</div>
 		<div class='footer-info'>
 			<div class='top-footer-info'>
