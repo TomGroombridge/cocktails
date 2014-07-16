@@ -1,6 +1,6 @@
 
 <div class='subscribe-title'>
-	<h2>Sign up</h2>
+	<h2>My Account</h2>
 </div>
 
 <div class='forms'>
@@ -21,7 +21,7 @@
 			    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
 			  </div>
 
-			  <div class="form-actions">
+			  <div class="form-actions sign-in">
 			    <%= f.button :submit, "Sign in" %>
 			  </div>
 			<% end %>
@@ -49,7 +49,7 @@
 			  	</div>
 
 			  <div class="form-actions sign-up">
-			    <%= f.button :submit, "Sign up" %>
+			    <%= f.button :submit, "Register" %>
 			  </div>
 			<% end %>
 		</div>
