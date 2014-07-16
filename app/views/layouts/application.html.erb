@@ -7,21 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<% if user_signed_in? %>
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-  </li>
-   <li>
-  <%= link_to('Edit registration', edit_user_registration_path) %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>  
-  </li>
-   <li>
-  <%= link_to('Register', new_user_registration_path)  %>
-  </li>
-<% end %>
 	<p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
@@ -32,8 +17,25 @@
 		</div>
 	<!-- navbar start -->
 		<div class='subscribe-bar'>
-			<div class='subscribe-nav'>
-			</div>
+			<!-- <div class='subscribe-nav'> -->
+				<div class='subscribe-links'>
+					<% if user_signed_in? %>
+					  <li>
+					  	<%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "link-decoration") %>        
+					  </li>
+				   	<li>
+				  		<%= link_to('Edit registration', edit_user_registration_path, class: "link-decoration") %>
+				 		</li>
+					<% else %>
+					  <li>
+					  	<%= link_to('Login', new_user_session_path, class: "link-decoration")  %>  
+					  </li>
+					  <li>
+					  	<%= link_to('Register', new_user_registration_path, class: "link-decoration")  %>
+					  </li>
+					<% end %>			
+				</div>
+			<!-- </div> -->
 		</div>
 		<div class='nav-bar'>
 
@@ -57,9 +59,7 @@
 		</div>
 		<!-- navbar end -->
 
-		<button class="sign-up-button">
-			Sign-up
-		</button>
+
 
 	</div>
 
