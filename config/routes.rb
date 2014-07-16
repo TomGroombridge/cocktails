@@ -1,8 +1,11 @@
 Cocktails::Application.routes.draw do
 
+  devise_for :users
   resources :products
   resources :about
   resources :pictures
+
+  root to: "about#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

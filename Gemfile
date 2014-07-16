@@ -27,6 +27,7 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'mail_form'
 gem 'simple_form'
 
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -34,6 +35,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem "twitter-bootstrap-rails"
+
+gem "devise"
 
 
 
