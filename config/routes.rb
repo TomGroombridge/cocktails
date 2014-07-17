@@ -4,6 +4,7 @@ Cocktails::Application.routes.draw do
   resources :products
   resources :about
   resources :pictures
+  resources :users
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
