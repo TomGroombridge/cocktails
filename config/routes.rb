@@ -5,6 +5,9 @@ Cocktails::Application.routes.draw do
   resources :about
   resources :pictures
 
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
   root to: "about#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,49 @@
+<div class='contact-form'>
+  <div class='contact-title'>
+    <h3>Contact</h3>
+  </div>
+
+
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <div class="contact-input-form">
+      <div class="contact-subheading">
+        <h4>Do you want to chat? Fill out the boxes below to send us some mail.</h4>
+      </div>
+      <div class="name">
+        <div class="name-label">
+          <%= f.label :name, 'Hi, my name is' %>
+        </div>
+        <div class="name-text">
+          <%= f.text_field :name, :required => true %>
+        </div>
+      </div>
+        <br>
+
+      <div class="email">
+        <div class="email-label">
+          <%= f.label :email, "My email address is " %>
+        </div>
+        <div class="email-text">
+          <%= f.text_field :email,  :required => true %>
+        </div>
+      </div>
+        <br>
+
+      <div class="message">
+        <div class="message-label">
+          <%= f.label :message, "I would like to say"%>
+        </div>
+        <div class="message-text">
+          <%= f.text_area :message,  :as => :text, :required => true  %>
+        </div>
+        <br>
+      </div>
+        </br>
+      
+      <div class="send-message">
+        <%= f.button :submit, 'Send message', :class=> "message-button" %>
+      </div>
+
+    </div>
+    <% end %>
+</div>
